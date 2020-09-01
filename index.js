@@ -1,45 +1,43 @@
 function numerosImpares(){
     for (i = 1; i <= 100; i += 2) {
-        console.log(i);
-      }
+        console.log(i)
+    }
 }
 
-function numerosPares() {
-    let cont =0;
-    while (cont <= 100) {
-        if (cont % 2 == 0) {
-          console.log(cont);
+function numerosPares(){
+    let contador = 0;
+    while (contador <= 100) {
+        if (contador % 2 == 0) {
+            console.log(contador)
         }
-        cont++;
-        //cont = cont + 1;
-      }
+        contador = contador + 1;
+    }
 }
 
 
-function sumar(a,b){
-    let suma;
-    suma = a+b;
+function sumarNumeros(n1, n2){
+    let suma = 0;
+    suma = n1 + n2;
     return suma;
 }
 
-function condicionalNumero() {
-  var numero = 2;
-  let numero1 = 1;
-  const PI = 3.1416;
-  let cont = 0;
-  let suma = numero + numero1;
+function condionalNumero() {
+    var numero = 2;
+    let numero1 = 1;
+    const PI = 3.1416;
+    let suma = numero + numero1;
 
-  if (suma >= 5) {
-    console.log("la suma es mayor o igual a 5");
-  } else {
-    console.log("perro feo");
-  }
+    if (suma >= 5) {
+        console.log("La suma es mayor o igual a 5");
+    } else {
+        console.log("La suma es menor que 5");
+    }
 }
-/*  console.log('////////////impares//////////')
- numerosImpares();
 
- console.log('////////////impares//////////')
- numerosPares(); */
+console.log("****Número Impares****");
+numerosImpares();
 
- let sumaDenumeros = sumar(3,100);
- console.log(sumaDenumeros);
+console.log("****Numeros Pares****");
+numerosPares();
+let sumaDenumeros = sumarNumeros(3,100);
+console.log(`La suma de los números es ${sumaDenumeros}`);
