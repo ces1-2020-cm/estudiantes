@@ -34,7 +34,7 @@ function condicionalNumero() {
     }
 }
 
-console.log("****Números Impares*****")
+console.log("****Números Impares*****") 
 numerosImpares();
 
 console.log("****Números Pares*****")
