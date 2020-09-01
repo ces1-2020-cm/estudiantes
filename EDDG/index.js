@@ -28,9 +28,9 @@ function condionalNumero() {
     let suma = numero + numero1;
 
     if (suma >= 5) {
-        console.log("La suma es mayor o igual a 5");
+        console.log("sum>=5");
     } else {
-        console.log("La suma es menor que 5");
+        console.log("sum<=5");
     }
 }
 
