@@ -1,14 +1,14 @@
-class Vehiculo {  //clases
+export default class vehiculo { 
     matricula = ''
     color = ''
     modelo = ''
-    pagoImpuestos = [10,90,3,4,'Jerson es mero lindo']
+    pagoImpuestos = [10,90,3,4,'hols']
     ciudadesVisitadas = {
         medellin: false,
         bogota: true,
         cartagena:false
     };
-    constructor(x, y, z){ //constructor
+    constructor(x, y, z){ 
         this.matricula = x
         this.color = y
         this.modelo = z
@@ -29,8 +29,8 @@ class Vehiculo {  //clases
     }
 
 
-let bmw = new Vehiculo('PO90Q', 'rojo', '1989'); //objetos
-var xx = new Vehiculo('RW23', 'verde');
+let bmw = new vehiculo('PO90Q', 'rojo', '1989'); //objetos
+var xx = new vehiculo('RW23', 'verde');
 //bmw.color = "rojo";
 //bmw.matricula = "PO90Q";
 //xx.modelo = "ferrari";
