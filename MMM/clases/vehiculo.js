@@ -16,3 +16,4 @@ xx.modelo="ferrari"
 //xx.color="azul"
 console.log(bmw)
 console.log(xx)
+
