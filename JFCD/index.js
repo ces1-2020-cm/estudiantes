@@ -36,7 +36,7 @@ function condicionalNumero() {
     console.log("perro feo");
   }
 }
-/*  console.log('////////////impares//////////')
+/*  console.log('////////////Pares//////////')
  numerosImpares();
 
  console.log('////////////impares//////////')
