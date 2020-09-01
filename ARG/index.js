@@ -64,5 +64,5 @@ numerosImpares();
 console.log("**Numeros Pares****");
 numerosPares();
 
-let sumaDeNumeros = sumarNumeros(3, 100);
-console.log(`la suma de los números es ${sumaDeNumeros}`);
+let sumaNumeros = sumarNumeros(3, 100);
+console.log(`la suma de los números es ${sumaNumeros}`);
