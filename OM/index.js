@@ -1,44 +1,21 @@
-function numerosImpares(){
-    for (i = 1; i <= 100; i += 2) {
-        console.log(i)
-    }
-}
+import {PI,numerosImpares} from './funciones/misfunciones.js'
+import Moto from './clases/Moto.js'
 
-function numerosPares(){
-    let cont = 0;
-    while (cont <= 100) {
-        if (cont % 2 == 0) {
-            console.log(cont);
-        }
-        //cont = cont + 1;
-        cont++;
-    }    
-}
+console.log("El valor de PI es: " + PI)
 
-function sumarNumeros(n1, n2){
-    let suma = 0;
-    suma = n1 + n2;
-    return suma;
-}
-
-function condicionalNumero() {
-    var numero = 2;
-    let numero1 = 1;
-    const PI = 3.1416;
-    let suma = numero + numero1
-
-    if (suma >= 5) {
-        console.log('La suma de ' + numero + ' y ' + numero1 + ' es ' + suma);
-    } else {
-        console.log(`La suma de ${numero} y ${numero1} es ${suma}`)
-    }
-}
 
 console.log("****Números Impares*****") 
 numerosImpares();
 
+let BMW = new Moto(19, 400) ;
+var XX = new Moto(30, 1000);
+
+console.log(BMW)
+console.log(XX)
+
+/*
 console.log("****Números Pares*****")
 numerosPares();
 
 let sumaDenumeros = sumarNumeros(3, 100);
-console.log(`La suma de los número es ${sumaDenumeros}`)
+console.log(`La suma de los número es ${sumaDenumeros}`) */
