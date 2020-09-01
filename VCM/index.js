@@ -48,4 +48,4 @@ console.log("****Numeros Pares****")
 NumerosPares();
 
 let sumaDenumeros = sumarNumeros(3,100);
-console.log (`La suma de los numeros es ${sumaDenumeros}`)
+console.log (`La suma de los numeros es ${sumaDenumeros}`) 
