@@ -1,7 +1,15 @@
 package.json
 <<<<<<< HEAD
+<<<<<<< HEAD
 JACH/node_modules
 =======
 FAU/node_modules
 >>>>>>> e9191161204bcf942ffe375e1bd69a67f3608437
+=======
+VCM/node_modules
+SCB/node_modules
+EDL/node_modules
+>>>>>>> 0dd7d7f8a249688202ca19b9f992220ab1c8a3cd
 MMM/node_modules
+node_modules
+FAU/node_modules
