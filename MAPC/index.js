@@ -1,20 +1,27 @@
-import {PI,numerosImpares } from "./funciones/misfunciones.js"
-import Moto from "./clases/Moto.js"
+const express = require('express')
+const app = express()
 
-console.log("El valor de PI es:" + PI)
+app.get('/', function(req, res){
+    res.send('Hola Concejo de Medellin')
+})
+
+app.get('/padilla', (req,res)=>{
+    res.send('<h1>HOLA PADILLA</h1> <h2>Saludos de express</h2>')
+
+})
+app.get('/json', (req, res)=>{
+    res.send({Nombre: "Miguel", edad:16})
+})
+app.get('/estudiantes/:numero_estudiantes', (req,res)=>{
+    console.log("El parametro numero_estudiantes es", req.params.numero_estudiantes )
+res.json({numero_estudiantes:10})
+})
+
+app.get("/fibonacci/:num", (req, res)=>{
+
+})
 
 
-console.log("*****Número Impares*****");
-numerosImpares();
-
-let BMW = new Moto(19, 400);
-var xx = new Moto(30, 1000);
-
-console.log(BMW)
-console.log(xx)
-/*
-console.log("*****Numeros Pares*****");
-numerosPares();
-
-let sumaDenumeros = sumarNumeros(3,100);
-console.log(`La suma de los números es ${sumaDenumeros}`);*/
+app.listen(5057, function(){
+    console.log("Servidor Corriendo En El Puerto 5057")
+})
