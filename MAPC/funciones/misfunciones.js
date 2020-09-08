@@ -1,5 +1,8 @@
-function numerosImpares(){
-    for (i = 1; i <= 100; i += 2) {
+export const PI = 3.1416
+
+
+export function numerosImpares(){
+    for (let i = 1; i <= 100; i += 2) {
         console.log(i)
     }
 }
@@ -10,7 +13,8 @@ function numerosPares(){
         if (contador % 2 == 0) {
             console.log(contador)
         }
-        contador = contador + 1;
+        //contador = contador + 1;
+        contador++;
     }
 }
 
@@ -34,10 +38,10 @@ function condionalNumero() {
     }
 }
 
-console.log("****Número Impares****");
+console.log("*****Número Impares*****");
 numerosImpares();
 
-console.log("****Numeros Pares****");
+console.log("*****Numeros Pares*****");
 numerosPares();
-
-
+let sumaDenumeros = sumarNumeros(3,100);
+console.log(`La suma de los números es ${sumaDenumeros}`);
