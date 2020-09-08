@@ -2,10 +2,14 @@ package.json
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 VRM/node_modules
 =======
 =======
 =======
+=======
+MAPC/node_modules
+>>>>>>> 59b09bd4dd7df8f994e245fb58b69f3fb37a0611
 JPBM/node_modules
 >>>>>>> 03c791d79c249c4513264f450452df33f70ea345
 MSOR/node_modules
@@ -22,11 +26,15 @@ FAU/node_modules
 VCM/node_modules
 SCB/node_modules
 EDL/node_modules
-MMM/node_modules
 node_modules
+<<<<<<< HEAD
 <<<<<<< HEAD
 FAU/node_modules
 MMM/node_modules
 
 =======
 >>>>>>> 8de1c00d175264a6538f974bedbc423c8719b7d8
+=======
+FAU/node_modules
+MMM/node_modules
+>>>>>>> 59b09bd4dd7df8f994e245fb58b69f3fb37a0611
