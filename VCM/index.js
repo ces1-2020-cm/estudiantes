@@ -1,51 +1,29 @@
-function condicionalNumero() {
+const express = require('express')
+const app = express()
 
-    var numero = 2;
-    let numero1 = 8;
-    let cont = 0;
-    const PI = 3.1416;
+app.get('/', function(req,res) {
+    res.send("<h1>Hola Concejo de Medellín!!</h1>")
+});
 
-    let suma = numero + numero1
+app.get('/Valeria', (req, res) => {
+    res.send("Hola Valeria!!")
+})
 
-    if (suma >= 5) {
-        console.log(`La suma de ` + numero + ` y ` + numero1 + ` es ` + suma);
-    } else {
-        console.log(`La suma de ${numero} y ${numero1} es ${suma}`);
-    }
-}
+app.get('/json', (req,res) => {
+    res.json({Nombre:"Valeria", Edad:"17 D:"})
+})
 
-function sumarNumeros(n1, n2) {
-    let suma = 0;
-    suma = n1 + n2;
-    return suma;
-}
+app.get('/estudiantes/:id_estudiantes', (req, res) => {
+    console.log("El parámetro id_estudiantes es: ", req.params.id_estudiantes)
+    res.json({id_estudiantes:req.params.id_estudiantes})
+})
 
-function NumerosPares() {
-    let cont = 0;
+app.get("/fibonaci/:id_pai",(req,res) => {
 
-    while (cont <= 100) {
-        if (cont % 2 == 0) {
+    res.json({})
+})
 
-            console.log(cont);
-        }
-        //cont = cont + 1;
-        cont++;
-    }
+app.listen(5057, function(){
+    console.log("El servidor está activo en el puerto 5057 bebé")
 
-}
-function NumerosImpares() {
-
-    for (i = 1; i <= 100; i += 2) {
-        console.log(i)
-    }
-
-}
-
-console.log("****Numeros Impares****")
-NumerosImpares();
-
-console.log("****Numeros Pares****")
-NumerosPares();
-
-let sumaDenumeros = sumarNumeros(3,100);
-console.log (`La suma de los numeros es ${sumaDenumeros}`)
+});

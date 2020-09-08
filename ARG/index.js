@@ -1,68 +1,21 @@
-var numero = 2;
-let numero1 = 1;
-let cont = 0;
-const PI =  3.1416;
+const express = require('express')
+const app = express()
 
-let suma = numero+numero1;
-/*
-if(suma >= 5){
-    console.log("La suma es mayor o igual a cinco")
-} else{
-    console.log("La suma es menor que cinco")
-}
+app.get('/', function(req,res){
+    res.send('Hola, concejo de medellin!!!!')
+})
+app.get('/alejo', (req, res) => {
+    res.send('Hola Alo!!!')
+})
 
-while(cont <= 100){
-    if(cont%2 ==0)
-    console.log(cont)
-    cont = cont+1
-    
-}
-
-for(i =1; i <=10; i+=2){
-    console.log(i)
-}
-*/
-function numerosImpares(){
-    for(i =1; i <=10; i+=2){
-        console.log(i)
-    } 
-}
-function numerosPares(){
-    let cont =0;
-    while(cont <= 100){
-        if(cont%2 ==0)
-        console.log(cont)
-        cont = cont+1
-        
-    }
-}
-
-function sumarNumeros(n1, n2){
-    let suma = 0;
-    suma = n1+n2;
-    return suma;
-}
-function condicionalNumero(){
-    var numero = 2;
-    let numero1 = 1;
-    let cont = 0;
-    const PI =  3.1416;
-    
-    let suma = numero+numero1;
-    
-    if(suma >= 5){
-        console.log("La suma es mayor o igual a cinco")
-    } else{
-        console.log("La suma es menor que cinco")
-    } 
-}
-
-
-console.log("**Numeros Impares**");
-numerosImpares();
-
-console.log("**Numeros Pares****");
-numerosPares();
-
-let sumaNumeros = sumarNumeros(3, 100);
-console.log(`la suma de los números es ${sumaNumeros}`);
+app.get('/json', (req,res) => {
+    res.json({nombre: "Alejo", edad: "16"})
+})
+app.get('/estudiantes/:numero_estudiantes', (req, res) => {
+    console.log("el parámetro numero_estudiantes es ", req.params.numero_estudiantes)
+    res.json({numero_estudiantes:req.params.numero_estudiantes})
+})
+app.get("fibonacci/:num")
+app.listen(5057, function(){
+    console.log("Servidor corriendo en el puerto 5057")
+})
