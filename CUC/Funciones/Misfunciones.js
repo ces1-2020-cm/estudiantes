@@ -1,7 +1,7 @@
 export const PI = 3.1416;
 
-function numerosImpares(){
-    for (i = 1; i <= 100; i += 2) {
+export function numerosImpares(){
+    for (let i = 1; i <= 100; i += 2) {
         console.log(i)
     }
 }

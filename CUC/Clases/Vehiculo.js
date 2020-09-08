@@ -1,4 +1,4 @@
-class Vehiculo{
+export default class Vehiculo{
     matricula = ""
     color = ""
     modelo = ""
@@ -24,7 +24,7 @@ class Vehiculo{
     }
 }
 
-let BMW = new Vehiculo("PO90Q", "Rojo", "2002");
+/* let BMW = new Vehiculo("PO90Q", "Rojo", "2002");
 var XX = new Vehiculo("RW23", "Verde");
 //BMW.color = "rojo"
 //BMW.matricula = "PO90Q"
@@ -35,3 +35,4 @@ console.log(XX)
 
 BMW.frenar();
 console.log(`La respuesta es: ${BMW.esValidoUsarlo()}`)
+ */
