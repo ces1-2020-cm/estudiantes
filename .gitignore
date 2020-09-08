@@ -1,5 +1,10 @@
 package.json
+<<<<<<< HEAD
 MAPC/node_modules
+=======
+SCB/node_modules
+EDL/node_modules
+>>>>>>> bfc28a48205b1f2b6bf6b41015c2fcfb2dc99f60
 MMM/node_modules
 node_modules
 FAU/node_modules
