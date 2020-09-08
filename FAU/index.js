@@ -1,20 +1,10 @@
-import {PI, numerosImpares} from './funciones/misfunciones.js';
-import Moto from './clases/Moto.js'
+const express = require('express');
+const app = express();
+app.get('/', function(req,res){
+    res.send('Hola mundo');
+    console.log(res);
+});
 
-
-//console.log(`El valor de pi es ${PI}`);
- console.log('////////////  Impares//////////')
- numerosImpares();
-
-let bmw = new Moto(19, 400); //objetos
-var xx = new Moto(30, 1000);
-
-console.log(bmw);
-console.log(xx);
-
-/* console.log('//////////// pares//////////')
- numerosPares(); 
-
-/* let sumaDenumeros = sumar(3,100);
- console.log(sumaDenumeros);
- */
+app,Listen(5057, function(){
+    console.log("El servidor está en uso.");
+});
