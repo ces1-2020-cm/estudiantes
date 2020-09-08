@@ -1,5 +1,10 @@
 package.json
+<<<<<<< HEAD
 MAPC/node_modules
+=======
+JPBM/node_modules
+MSOR/node_modules
+>>>>>>> 03c791d79c249c4513264f450452df33f70ea345
 JFCD/node_modules
 SGL/node_modules
 CUC/node_modules
