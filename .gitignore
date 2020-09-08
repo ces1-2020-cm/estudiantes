@@ -30,6 +30,7 @@ node_modules
 <<<<<<< HEAD
 <<<<<<< HEAD
 FAU/node_modules
+<<<<<<< HEAD
 MMM/node_modules
 
 =======
@@ -38,3 +39,5 @@ MMM/node_modules
 FAU/node_modules
 MMM/node_modules
 >>>>>>> 59b09bd4dd7df8f994e245fb58b69f3fb37a0611
+=======
+>>>>>>> e56e7a7489bee54625af21396d4c2ca757a407f6
