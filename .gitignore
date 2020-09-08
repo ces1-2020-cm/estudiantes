@@ -1,11 +1,14 @@
 package.json
 <<<<<<< HEAD
+<<<<<<< HEAD
 MAPC/node_modules
 =======
+=======
+VCM/node_modules
+>>>>>>> 0dd7d7f8a249688202ca19b9f992220ab1c8a3cd
 SCB/node_modules
 EDL/node_modules
 >>>>>>> bfc28a48205b1f2b6bf6b41015c2fcfb2dc99f60
 MMM/node_modules
 node_modules
 FAU/node_modules
-MMM/node_modules
