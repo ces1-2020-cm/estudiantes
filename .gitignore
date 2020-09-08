@@ -1,4 +1,5 @@
 OM/node_modules
+ARG/node_modules
 MAPC/node_modules
 JPBM/node_modules
 MSOR/node_modules
@@ -6,12 +7,8 @@ JFCD/node_modules
 SGL/node_modules
 CUC/node_modules
 MMM/node_modules
-node_modules
 ADF/node_modules
 WPH/node_modules
 FAU/node_modules
-VCM/node_modules
 SCB/node_modules
 EDL/node_modules
-node_modules
-FAU/node_modules
