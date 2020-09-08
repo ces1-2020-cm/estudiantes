@@ -1,8 +1,9 @@
 {
-  "name": "om",
+  "name": "vcm",
   "version": "1.0.0",
-  "description": "Proyecto de estudiantes",
+  "description": "Proyecto",
   "main": "index.js",
+
   "scripts": {
     "dev" : "nodemon index",
     "start" : "node index"
@@ -11,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/ces1-2020-cm/estudiantes.git"
   },
-  "author": "Juan Pablo Bolivar Marin",
+  "author": "Valeria Castañeda",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ces1-2020-cm/estudiantes/issues"
