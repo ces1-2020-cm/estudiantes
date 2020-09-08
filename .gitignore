@@ -1,5 +1,12 @@
 package.json
+<<<<<<< HEAD
 JPBM/node_modules
+=======
+SGL/node_modules
+CUC/node_modules
+MMM/node_modules
+node_modules
+>>>>>>> d541a2f39ee9e57cebf95040a544e9aa20835c18
 ADF/node_modules
 WPH/node_modules
 FAU/node_modules
@@ -8,4 +15,3 @@ SCB/node_modules
 EDL/node_modules
 MMM/node_modules
 node_modules
-FAU/node_modules
