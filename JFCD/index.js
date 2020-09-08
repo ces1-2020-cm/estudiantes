@@ -1,46 +1,21 @@
-
-function numerosImpares(){
-    for (i = 1; i <= 100; i += 2) {
-        console.log(i);
-      }
-}
-
-function numerosPares() {
-    let cont =0;
-    while (cont <= 100) {
-        if (cont % 2 == 0) {
-          console.log(cont);
-        }
-        cont++;
-        //cont = cont + 1;
-      }
-}
+import {PI, numerosImpares} from './funciones/misfunciones.js';
+import Moto from './clases/Moto.js'
 
 
-function sumar(a,b){
-    let suma;
-    suma = a+b;
-    return suma;
-}
-
-function condicionalNumero() {
-  var numero = 2;
-  let numero1 = 1;
-  const PI = 3.1416;
-  let cont = 0;
-  let suma = numero + numero1;
-
-  if (suma >= 5) {
-    console.log("la suma es mayor o igual a 5");
-  } else {
-    console.log("perro feo");
-  }
-}
-/*  console.log('////////////Pares//////////')
+//console.log(`El valor de pi es ${PI}`);
+ console.log('////////////  Impares//////////')
  numerosImpares();
 
- console.log('////////////impares//////////')
- numerosPares(); */
+let bmw = new Moto(19, 400); //objetos
+var xx = new Moto(30, 1000);
 
- let sumaDenumeros = sumar(3,100);
+console.log(bmw);
+console.log(xx);
+
+/* console.log('//////////// pares//////////')
+ numerosPares(); 
+
+/* let sumaDenumeros = sumar(3,100);
  console.log(sumaDenumeros);
+ */
+

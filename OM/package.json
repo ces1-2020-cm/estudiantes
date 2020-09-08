@@ -1,0 +1,20 @@
+{
+  "name": "om",
+  "version": "1.0.0",
+  "description": "Proyecto de estudiantes",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ces1-2020-cm/estudiantes.git"
+  },
+  "author": "Oscar Mesa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ces1-2020-cm/estudiantes/issues"
+  },
+  "homepage": "https://github.com/ces1-2020-cm/estudiantes#readme"
+}
