@@ -1,5 +1,9 @@
 package.json
+<<<<<<< HEAD
 OM/node_modules
+=======
+JFCD/node_modules
+>>>>>>> 8de1c00d175264a6538f974bedbc423c8719b7d8
 SGL/node_modules
 CUC/node_modules
 MMM/node_modules
