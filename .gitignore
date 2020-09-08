@@ -1,5 +1,13 @@
 package.json
+<<<<<<< HEAD
 VRM/node_modules
+=======
+JFCD/node_modules
+SGL/node_modules
+CUC/node_modules
+MMM/node_modules
+node_modules
+>>>>>>> 8de1c00d175264a6538f974bedbc423c8719b7d8
 ADF/node_modules
 WPH/node_modules
 FAU/node_modules
@@ -8,6 +16,9 @@ SCB/node_modules
 EDL/node_modules
 MMM/node_modules
 node_modules
+<<<<<<< HEAD
 FAU/node_modules
 MMM/node_modules
 
+=======
+>>>>>>> 8de1c00d175264a6538f974bedbc423c8719b7d8
