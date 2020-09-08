@@ -1,7 +1,7 @@
 {
-  "name": "mmm",
+  "name": "om",
   "version": "1.0.0",
-  "description": "El mejor proyecto",
+  "description": "Proyecto de estudiantes",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/ces1-2020-cm/estudiantes.git"
   },
-  "author": "Maicol Morales",
+  "author": "Oscar Mesa",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ces1-2020-cm/estudiantes/issues"
