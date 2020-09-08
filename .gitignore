@@ -1,10 +1,13 @@
 package.json
-<<<<<<< HEAD
 VRM/node_modules
-=======
+ADF/node_modules
+WPH/node_modules
+FAU/node_modules
+VCM/node_modules
+SCB/node_modules
 EDL/node_modules
 MMM/node_modules
 node_modules
 FAU/node_modules
 MMM/node_modules
->>>>>>> 8d4eb089864a18a3459133cdda79c8ec62ef743d
+
