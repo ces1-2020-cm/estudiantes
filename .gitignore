@@ -1,4 +1,3 @@
-package.json
 ARG/node_modules
 MAPC/node_modules
 JPBM/node_modules
@@ -13,4 +12,3 @@ WPH/node_modules
 FAU/node_modules
 SCB/node_modules
 EDL/node_modules
-node_modules
