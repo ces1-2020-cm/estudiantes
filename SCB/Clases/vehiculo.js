@@ -25,7 +25,7 @@ let.respuesta = ""
 }
 
 }
-
+/*
 let BMW = new vehiculo("EKN 780", "blanco", "2004") ;
 var XX = new vehiculo("RWF 238", "negro") ;
 //BMW.color = "rojo"
@@ -37,5 +37,6 @@ var XX = new vehiculo("RWF 238", "negro") ;
 BMW.frenar()
 console.log("La respuesta es:")
 BMW.esValidoUsarlo
+*/
 
 
