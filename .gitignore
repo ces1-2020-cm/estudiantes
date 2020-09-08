@@ -1,3 +1,6 @@
+OM/node_modules
+JAR/node_modules
+ARG/node_modules
 MAPC/node_modules
 JPBM/node_modules
 MSOR/node_modules
@@ -8,7 +11,9 @@ MMM/node_modules
 ADF/node_modules
 WPH/node_modules
 FAU/node_modules
-VCM/node_modules
 SCB/node_modules
 EDL/node_modules
 FAU/node_modules
+JACH/node_modules
+EDL/node_modules
+VRM/node_modules
