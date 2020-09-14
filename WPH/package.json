@@ -1,27 +1,27 @@
 {
-  "name": "om",
+  "name": "wph",
   "version": "1.0.0",
-  "description": "Proyecto de estudiantes",
+  "description": "Proyecto estudiantes",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index",
+    "start": "node index"
+
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ces1-2020-cm/estudiantes.git"
   },
-  "author": "Oscar Mesa",
+  "author": "Wendy Paz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ces1-2020-cm/estudiantes/issues"
   },
   "homepage": "https://github.com/ces1-2020-cm/estudiantes#readme",
+  "keywords": [
+    "https://github.com/ces1-2020-cm/estudiantes"
+  ],
   "dependencies": {
-<<<<<<< HEAD:package.json
-    "nodemon": "^2.0.4"
-=======
     "express": "^4.17.1"
->>>>>>> 9420b3b06e2ba59725a6456d6c4ade23243fc920:OM/package.json
   }
 }

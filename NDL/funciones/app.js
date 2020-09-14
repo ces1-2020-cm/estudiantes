@@ -1,18 +1,20 @@
-const nImpares = ()=>{
+export const nImpares = ()=>{
     for(let i = 0; i<100 ;i++){
         if(i%2!=0) console.log(i);
     }
 }
 
-const nPares = ()=>{
+export const pi = 3.1416;
+
+export const nPares = ()=>{
     for(let i = 0; i<100 ;i++){
         if(i%2==0) console.log(i);
     }
 }
 
-const Suma = (n,n2) => n+n2;
+export const Suma = (n,n2) => n+n2;
 
-const nCondicionales = (n,n2)=>{
+export const nCondicionales = (n,n2)=>{
     if(Suma(n,n2)>5)
         console.log('La suma es mayor a 5');
     else

@@ -1,23 +1,29 @@
+const express = require('express')
+const app = express()
 
-import {PI, numerosImpares} from "./funciones/misfunciones.js"
-import POO from "./clases/Moto.js"
+app.get('/', function(req,res){
+    res.send('hola mundo')
+    
+})
 
-console.log("el valor de PI es:" + PI)
+app.get('/valentina', (req, res) => {
+    res.send( `<h1>hola valentina</h1> 
+              <h2>saludos de express</h2>`)
 
-console.log("numeros impares")
-numerosImpares();
+})
 
-let BMW = new Moto(19, 400);
-var XX = new Moto(30, 600);
+app.get('/estudiantes/:numero_estudiantes', (req, res) =>{
+    console.log("el paramero numero_estudiantes es", req.params)
+    res.json({numero_estudiantes:req.params.numero_estudiantes})
 
-console.log(BMW)
-console.log(XX)
-/*   console.log('////////////impares//////////')
- numerosImpares();
+})
 
- console.log('////////////impares//////////')
- numerosPares(); 
+app.get("/fibonacci/:run")
 
- let sumaDenumeros = sumar(3,100);
- console.log(sumaDenumeros);   
-  */    
+app.get('/json', (req, res) => {
+    res.json({nombre: "valentina", edad:"17"})
+})
+
+app.listen(5058, function(){
+    console.log("servidor corriendo en el puerto")
+})
