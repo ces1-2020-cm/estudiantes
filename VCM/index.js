@@ -18,10 +18,10 @@ app.get('/estudiantes/:id_estudiantes', (req, res) => {
     res.json({id_estudiantes:req.params.id_estudiantes})
 })
 
-app.get("/fibonaci/:id_pai",(req,res) => {
+//app.get("/fibonaci/:id_pai",(req,res) => {
 
-    res.json({})
-})
+   // res.json({})
+//})
 
 app.listen(5057, function(){
     console.log("El servidor está activo en el puerto 5057 bebé")
