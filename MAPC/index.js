@@ -20,7 +20,9 @@ res.json({numero_estudiantes:10})
 app.get("/fibonacci/:num", (req, res)=>{
 
 })
-
+app.get('/seriefibonacci',(req,res) => {
+    res.send("El inicio de la sequencia es: 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597. La sucesión comienza con los números 0 y 1 a partir de esto cada término es el resultado de la suma de los 2 anteriores ")
+})
 
 app.listen(5057, function(){
     console.log("Servidor Corriendo En El Puerto 5057")
