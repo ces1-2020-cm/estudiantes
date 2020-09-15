@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 import {PI, numerosImpares} from "./funciones/misfunciones.js"
 import POO from "./clases/Moto.js"
@@ -22,7 +22,7 @@ console.log(XX)
  let sumaDenumeros = sumar(3,100);
  console.log(sumaDenumeros);   
   */    
-=======
+
 const express = require('express')
 const app = express()
 
