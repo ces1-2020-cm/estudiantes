@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import {PI, numerosImpares} from "./funciones/misfunciones.js"
 import POO from "./clases/Moto.js"
@@ -21,3 +22,34 @@ console.log(XX)
  let sumaDenumeros = sumar(3,100);
  console.log(sumaDenumeros);   
   */    
+=======
+const express = require('express')
+const app = express()
+
+app.get('/', function(req,res){
+    res.send('hola mundo')
+    
+})
+
+app.get('/valentina', (req, res) => {
+    res.send( `<h1>hola valentina</h1> 
+              <h2>saludos de express</h2>`)
+
+})
+
+app.get('/estudiantes/:numero_estudiantes', (req, res) =>{
+    console.log("el paramero numero_estudiantes es", req.params)
+    res.json({numero_estudiantes:req.params.numero_estudiantes})
+
+})
+
+app.get("/fibonacci/:run")
+
+app.get('/json', (req, res) => {
+    res.json({nombre: "valentina", edad:"17"})
+})
+
+app.listen(5058, function(){
+    console.log("servidor corriendo en el puerto")
+})
+>>>>>>> 1d7dcf84b81ad11a0f73d0be6c34febd6c7e2308
