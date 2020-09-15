@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {PI, numeroImpares} from './funciones/misfunciones.js'
 import Moto from './clases/Moto.js'
 console.log("El valor de PI es: " + PI)
@@ -15,7 +14,6 @@ console.log("****Numeros Pares*****")
 numeroPare();
 let sumaDenumeros = sumarNumero(3, 100);
 console.log(`La suma de los numeso es ${sumaDenumeros}`) */
-=======
 const express = require('express')
 const app = express()
 
@@ -53,4 +51,3 @@ app.get('/fibonacci/:num', (req, res)=>{
 app.listen(5057, function(){
     console.log("Servidor corriendo en el puerto 5057")
 });
->>>>>>> 1d7dcf84b81ad11a0f73d0be6c34febd6c7e2308
