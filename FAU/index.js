@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-import {PI, numerosImpares} from './funciones/misfunciones.js';
-import Moto from './clases/Moto.js'
-
-
-//console.log(`El valor de pi es ${PI}`);
- console.log('////////////  Impares//////////')
- numerosImpares();
-
-let bmw = new Moto(19, 400); //objetos
-var xx = new Moto(30, 1000);
-
-console.log(bmw);
-console.log(xx);
-
-/* console.log('//////////// pares//////////')
- numerosPares(); 
-
-/* let sumaDenumeros = sumar(3,100);
- console.log(sumaDenumeros);
- */
-=======
 const express = require('express');
 const app = express();
 
@@ -44,7 +22,22 @@ app.get('/estudiantes/:numero_estudiantes', (req,res)=>{
 res.json({numero_estudiantes:10})
 })
 
-app.get("/fibonacci/:num", (req, res)=>{
+/*  Sucesión Fibonacci  */
 
-});
->>>>>>> 1d7dcf84b81ad11a0f73d0be6c34febd6c7e2308
+//let fibo_final = fibo_total;
+//app.get("/fibonacci/:num", (req, res,fibo_total) => {
+    let fibo_origin = [0,1];
+let fibonacci = function(fibo_total){
+  let fibo_final = fibo_origin;
+if (typeof fibo_final != 'number') {
+    fibo_final = fibonacci(n - 1) + fibonacci(n - 2);
+    fibo_origin(fibo_total) = fibo_final;
+
+    return fibo_final;
+}
+console.log(fibonacci(250));
+console.log(`El número ${fibo_total} pertenece a la secuencia Fibonacci:`, req.params.secuencia_fibo)
+
+res.json({fibo_origin});
+
+ };
