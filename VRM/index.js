@@ -65,4 +65,3 @@ app.get('/json', (req, res) => {
 app.listen(5058, function(){
     console.log("servidor corriendo en el puerto")
 })
->>>>>>> 1d7dcf84b81ad11a0f73d0be6c34febd6c7e2308
