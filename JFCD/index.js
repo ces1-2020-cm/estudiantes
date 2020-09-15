@@ -2,7 +2,8 @@ const express = require('express')
 const app = express()
 
 app.get('/', function(req, res) {
-    res.send('Hola Mundo Concejo de Medellín !!!');
+
+    res.send(`Hola Mundo Concejo de Medellín !!! $`);
 });
 
 app.get('/juan', (req, res) => {
@@ -24,11 +25,20 @@ app.get('/estudiantes/:numero_estudiantes', (req, res)=>{
     });
 });
 // TAREAAA ///////////////////////////
-app.get('/fibonacci/:num', (req, res)=>{
-
+app.get('/fibonacci/', (req, res)=>{
+    let a,b,result;
+    a=0;
+    b=1;
+    result = b;
+    for(let i = 1; i <100; i++){
+        res.send(result)
+        result = a+b;
+        a=b;
+        b = result;
+    }
 });
 //////////////////////////////////////
 
 app.listen(5057, function(){
     console.log("Servidor corriendo en el puerto 5057")
-});
+});  
