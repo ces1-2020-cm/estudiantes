@@ -19,11 +19,15 @@ app.get('/estudiantes/:numero_estudiantes', (req, res) =>{
 })
 
 app.get("/fibonacci", (req, res) => {
-    function fibonacci(n) {
-        return n < 1 ? 0
-        : n <= 2 ? 1
-        : fibonacci(n - 1) + fibonacci(n - 2);
+    function fibo(num) {
+        if(num == 0) {
+          return 0;
+        } else if(num == 1) {
+          return 1;
+        } else {
+          return fibo(num-1) + fibo(num-2);
         }
+      }
         
         res.send(fibonacci(30));
         
