@@ -1,42 +1,18 @@
-<<<<<<< HEAD
+
 {
-  "name": "om",
+  "name": "jpbm",
   "version": "1.0.0",
-  "description": "Proyecto de estudiantes",
+  "description": "Proyecto de jpbm",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ces1-2020-cm/estudiantes.git"
   },
-  "author": "Juan Pablo Bolivar Marin",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ces1-2020-cm/estudiantes/issues"
-  },
-  "homepage": "https://github.com/ces1-2020-cm/estudiantes#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
-}
-=======
-{
-  "name": "om",
-  "version": "1.0.0",
-  "description": "Proyecto de estudiantes",
-  "main": "index.js",
-  "scripts": {
-    "dev" : "nodemon index",
-    "start" : "node index"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ces1-2020-cm/estudiantes.git"
-  },
-  "author": "Juan Pablo Bolivar Marin",
+  "author": "Juan Fernando Castaño",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ces1-2020-cm/estudiantes/issues"
@@ -49,4 +25,4 @@
     "nodemon": "^2.0.4"
   }
 }
->>>>>>> 1d7dcf84b81ad11a0f73d0be6c34febd6c7e2308
+

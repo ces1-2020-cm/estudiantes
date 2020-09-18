@@ -1,7 +1,14 @@
-console.log()((size =>{
-    if(size < 0) return [];
-    if(size == 0) return [0];
-    var fibonacci = [0 , 1];
-    for(i=2; i<=size; ++i) fibonacci.push(fibonacci[i-2]+fibonacci[i-1]);
-    return fibonacci;
-}) (process.argv[2]));
+var previous = 0; 
+var current = 1; 
+var sum = 0; 
+var next; 
+
+    for(i = 1; i < 100; i++){ 
+     next = current + previous; 
+     previous = current; 
+     current = next; 
+     if(current % 2 === 0 && current < 4000000) { 
+      sum += current; 
+     console.log(sum); 
+     } 
+    } 
