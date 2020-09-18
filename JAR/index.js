@@ -9,17 +9,31 @@ app.get('/jerson', (req, res) => {
     res.send('<h1>Hola Jerson!!!</h1><h2>Saludos desde express!!!</h2>')
 });
 
-//app.get('/fibonacci/', (req, res)=> {
-    
-//});
-
 app.get('/json', (req, res) => {
     res.json({ nombre: 'Jerson', edad: '18' })
 });
 
+
+app.get("/fibonacci", (req, res) => {
+    function fibo(li)
+    {
+        let n;
+        n =[0,1];
+        l=2
+        while (l < li) 
+        {
+            n[l] = n[l - 2] +  n[l - 1];
+            l++
+        }
+        return n;
+    }
+    res.send("La serie es: [" + fibo(10) + "]")
+        
+}); 
+
 app.get('/estudiantes/:numero_estudiantes', (req, res) => {
     console.log('El parametro numero_estudiantes es ', req.params.numero_estudiantes);
-    res.json({ numero_estudiantes: req.params.numero_estudiantes});
+    res.json({ numero_estudiantes: req.params.numero_estudiantes });
 });
 
 app.listen(5057, function () {
