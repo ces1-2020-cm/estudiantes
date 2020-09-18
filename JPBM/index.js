@@ -1,53 +1,48 @@
-import {PI, numeroImpares} from './funciones/misfunciones.js'
-import Moto from './clases/Moto.js'
-console.log("El valor de PI es: " + PI)
-numeroImpares();
-
-let BMW = new Moto(19, 400);
-var XX = new Moto(30, 1000);
-
-console.log(BMW)
-console.log(XX)
-/*console.log("****Numeros Impares*****")
-numeroImpares();
-console.log("****Numeros Pares*****")
-numeroPare();
-let sumaDenumeros = sumarNumero(3, 100);
-console.log(`La suma de los numeso es ${sumaDenumeros}`) */
 const express = require('express')
 const app = express()
 
 app.get('/', function(req, res) {
-    res.send('Hola Mundo Concejo de Medellín !!!');
+
+    res.send(`Hola Mundo Concejo de Medellín`);
 });
 
-app.get('/Bolivar', (req, res) => {
-    res.send(`<h1>Hola usuario!<h1>
-    <h2>Bienvenido<h2`);
+app.get('/juan', (req, res) => {
+    res.send(`<h1>Te doz la bienvenida<h1>
+    <h2>usuario<h2`);
 });
 
 app.get('/json', (req, res)=> {
     res.json({
-        nombre: "Juan Pablo",
+        nombre: "Bolivar",
         edad: 17
     });
 });
 
-app.get('/estudiantes/:numero_estudiantes', (req, res) =>{
-    consolelog("El parametro numero_estudiantes es", req.params)
-    res.json({numero_estudiantes:10})
+app.get('/estudiantes/:numero_estudiantes', (req, res)=>{
+    console.log('El parametro numero_estudiantes es ', req.params.numero_estudiantes);
+    res.json({
+        numero_estudiantes: req.params.numero_estudiantes
+    });
 });
-app.get('/fibonacci/:num', (req, res)=>{
-    
-    console.log()((size =>{
-        if(size < 0) return [];
-        if(size == 0) return [0];
-        var fibonacci = [0 , 1];
-        for(i=2; i<=size; ++i) fibonacci.push(fibonacci[i-2]+fibonacci[i-1]);
-        return fibonacci;
-    }) (process.argv[2]));
+
+app.get('/fibonacci/:limite', (req, res,)=>{
+    function Fibonaccisucesion(limite)
+    {
+        let fibonumero;
+        fibonumero =[0,1];
+        for (let i = 2; i < limite; i++) 
+        {
+            fibonumero[i] = fibonumero[i - 2] + fibonumero[i - 1];
+        }
+        return fibonumero;
+    }
+    res.json(` La sucesion de fibonacci es:
+     ${Fibonaccisucesion(req.params.limite)}`)
+        
 
 });
+
+
 app.listen(5057, function(){
     console.log("Servidor corriendo en el puerto 5057")
 });
