@@ -13,8 +13,8 @@ app.get('/json', (req, res) => {
     res.json({ nombre: 'Jerson', edad: '18' })
 });
 
-
-app.get("/fibonacci", (req, res) => {
+app.get("/fibonacci/:limite", (req, res) => {
+    console.log("El número límite ingresado por usted es: ", req.params.limite)
     function fibo(li)
     {
         let n;
@@ -27,14 +27,13 @@ app.get("/fibonacci", (req, res) => {
         }
         return n;
     }
-    res.send("La serie es: [" + fibo(10) + "]")
-        
-}); 
+    res.json(`Su serie es : [${fibo(req.params.limite)}]`)
+})
 
 app.get('/estudiantes/:numero_estudiantes', (req, res) => {
-    console.log('El parametro numero_estudiantes es ', req.params.numero_estudiantes);
-    res.json({ numero_estudiantes: req.params.numero_estudiantes });
-});
+    console.log("el parámetro numero_estudiantes es ", req.params.numero_estudiantes)
+    res.json({numero_estudiantes:req.params.numero_estudiantes})
+})
 
 app.listen(5057, function () {
     console.log('Servidor corriendo en el puerto 5057')
