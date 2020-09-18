@@ -65,7 +65,20 @@ app.get('/estudiantes/:numero_estudiantes', (req, res) =>{
 
 })
 
-app.get("/fibonacci/:run")
+app.get("/fibonacci", (req, res) => {
+    function fibo(num) {
+        if(num == 0) {
+          return 0;
+        } else if(num == 1) {
+          return 1;
+        } else {
+          return fibo(num-1) + fibo(num-2);
+        }
+      }
+        
+        res.send(fibonacci(30));
+        
+})
 
 app.get('/json', (req, res) => {
     res.json({nombre: "valentina", edad:"17"})
