@@ -25,7 +25,24 @@ app.get('/estudiantes/:numero_estudiantes', (req, res)=>{
     });
 });
 // TAREAAA ///////////////////////////
-app.get('/fibonacci/', (req, res)=>{
+ app.get("/tarea_fibonacci", (req, res) => {
+    function tareaFibonacci(limite)
+    {
+        let array;
+        array =[0,1];
+        for (let i = 2; i < limite; i++) 
+        {
+            array[i] = array[i - 2] + 
+            array[i - 1];
+        }
+        return array;
+    }
+    res.send(`La serie de fibonacci es:
+     ${tareaFibonacci(50)}`)
+        
+}) 
+ // EJEMPLO FUNCIONAL EN JS PERO NO EJECUTA POR EL res.send
+/* app.get('/fibonacci/', (req, res)=>{
     let a,b,result;
     a=0;
     b=1;
@@ -36,7 +53,7 @@ app.get('/fibonacci/', (req, res)=>{
         a=b;
         b = result;
     }
-});
+}); */
 //////////////////////////////////////
 
 app.listen(5057, function(){
