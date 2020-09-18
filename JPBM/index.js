@@ -26,18 +26,18 @@ app.get('/estudiantes/:numero_estudiantes', (req, res)=>{
 });
 
 app.get('/fibonacci/:limite', (req, res,)=>{
-    function Fibonaccisucesion(limite)
+    function Fibonaccisucesion(sucesion)
     {
-        let fibonumero;
-        fibonumero =[0,1];
-        for (let i = 2; i < limite; i++) 
+        let fibonumero =[0,1];
+        
+        for (let i = 2; i < sucesion; i++) 
         {
             fibonumero[i] = fibonumero[i - 2] + fibonumero[i - 1];
         }
         return fibonumero;
     }
-    res.json(` La sucesion de fibonacci es:
-     ${Fibonaccisucesion(req.params.limite)}`)
+    res.json( "La sucesion de fibonacci es: " + Fibonaccisucesion(req.params.limite));
+     
         
 
 });
