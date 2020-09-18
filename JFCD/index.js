@@ -38,7 +38,7 @@ app.get('/estudiantes/:numero_estudiantes', (req, res)=>{
         return array;
     }
     res.json(`La serie de fibonacci es:
-     ${tareaFibonacci(50)}`)
+     ${tareaFibonacci(req.params.limite)}`)
         
 }) 
 
