@@ -34,7 +34,7 @@ app.get('/fibonacci/:limite', (req, res,)=>{
         {
             fibonumero[i] = fibonumero[i - 2] + fibonumero[i - 1];
         }
-        return numeros;
+        return fibonumero;
     }
     res.json(` La sucesion de fibonacci es:
      ${Fibonaccisucesion(req.params.limite)}`)
