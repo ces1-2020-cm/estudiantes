@@ -1,19 +1,11 @@
-var numero1 = parseInt(prompt("Ingrese el primer número"));
-var numero2 = parseInt(prompt("Ingrese el segundo número"));
-var array = [numero1, numero2];
-
-for(var i= 0; i<=100; i++)
-{
-    var newnumero = numero1 + numero2;
-    array.push(newnumero);
-    numero1 = numero2;
-    numero2 = newnumero;
-
-}
-
-    console.log (array);
-
-    for(x of array)
-    {
-        document.write(x + "<br>");
+app.get("/fibonacci/:limite", (req, res) => {
+    console.log("el número límite es", req.params.limite)
+    function fibonacci(numero){
+        let serie=[0,1];
+        for (let i = 2; i < numero; i++) {
+            serie[i] = serie[i-2] + serie[i-1];
+        }
+        return serie;
     }
+    res.json(fibonacci(req.params.limite))
+})
