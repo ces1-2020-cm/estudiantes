@@ -21,6 +21,17 @@ app.get('/estudiantes/:numero_estudiantes', (req,res)=>{
     console.log("El parametro numero_estudiantes es", req.params.numero_estudiantes )
 res.json({numero_estudiantes:10})
 })
+app.get("/fibonacci/:num", (req, res,) => {
+var limit = 10;
+	var Fib_total = [0,1];
+
+	for(i=2; i <= limit; i++){
+		fibo.push(Fib_total[i-1] + Fib_total[i-2]);
+		document.write(Fib_total[i]+"<br/>");	
+    }
+    console.log(`La fibonacci es: ${fibo}`);
+    res.send({Fib_total:100});
+})
 
 /*  Sucesión Fibonacci  */
 
