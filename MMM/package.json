@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "El mejor proyecto",
   "main": "index.js",
-  "type": "module",
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,11 @@
     "url": "https://github.com/ces1-2020-cm/estudiantes/issues"
   },
   "homepage": "https://github.com/ces1-2020-cm/estudiantes#readme",
+  "keywords": [
+    "https://github.com/ces1-2020-cm/estudiantes"
+  ],
   "dependencies": {
     "express": "^4.17.1"
   }
 }
+

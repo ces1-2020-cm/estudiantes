@@ -1,22 +1,40 @@
-import {PI, numerosImpares} from './funciones/misfunciones.js'
-import Moto from './clases/Moto.js'
+const express = require('express')
+const app = express()
 
-console.log("El valor de PI es: " +PI)
-console.log("Números Impares hasta el 100")
-numerosImpares()
+app.get('/', function (req, res) {
+    res.send('Hola, Concejo de Medellín');
+});
 
-let BMW = new Moto(19,400);
-var XX = new Moto(30,1000);
+app.get('/jerson', (req, res) => {
+    res.send('<h1>Hola Jerson!!!</h1><h2>Saludos desde express!!!</h2>')
+});
 
-console.log(BMW)
-console.log(XX)
-/*
-console.log("****Números Impares****")
-numerosImpares();
+app.get('/json', (req, res) => {
+    res.json({ nombre: 'Jerson', edad: '18' })
+});
 
-console.log("****Números Pares****")
-numerosPares();
+app.get("/fibonacci/:limite", (req, res) => {
+    console.log("El número límite ingresado por usted es: ", req.params.limite)
+    function fibo(li)
+    {
+        let n;
+        n =[0,1];
+        l=2
+        while (l < li) 
+        {
+            n[l] = n[l - 2] +  n[l - 1];
+            l++
+        }
+        return n;
+    }
+    res.json(`Su serie es : [${fibo(req.params.limite)}]`)
+})
 
-let sumaDenumeros = sumaNumeros(3, 100);
-//console.log("La suma de los números es", sumaDenumeros);
-console.log(`La suma de los números es ${sumaDenumeros}`);*/
+app.get('/estudiantes/:numero_estudiantes', (req, res) => {
+    console.log("el parámetro numero_estudiantes es ", req.params.numero_estudiantes)
+    res.json({numero_estudiantes:req.params.numero_estudiantes})
+})
+
+app.listen(5057, function () {
+    console.log('Servidor corriendo en el puerto 5057')
+});

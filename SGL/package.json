@@ -1,0 +1,26 @@
+{
+  "name": "sgl",
+  "version": "1.0.0",
+  "description": "proyecto de Sebastian Gallego Londoño",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ces1-2020-cm/estudiantes.git"
+  },
+  "author": "Sebastian Gallego Londoño",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ces1-2020-cm/estudiantes/issues"
+  },
+  "homepage": "https://github.com/ces1-2020-cm/estudiantes#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
