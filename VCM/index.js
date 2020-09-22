@@ -1,24 +1,48 @@
-import {PI} from './funciones/misfunciones.js'
-import Moto from './clases/Moto.js'
+const express = require('express')
+const app = express()
 
-console.log("El valor de PI es: "+ PI)
+app.get('/', function (req, res) {
+    res.send("<h1>Hola Concejo de Medellín!!</h1>")
+});
 
-console.log("****Numeros Impares****")
-NumerosImpares();
+app.get('/Valeria', (req, res) => {
+    res.send("Hola Valeria!!")
+})
 
-let BMW = new Moto(19,400);
-var XX = new Moto(30,1000);
+app.get('/json', (req, res) => {
+    res.json({ Nombre: "Valeria", Edad: "17 D:" })
+})
 
-console.log (BMW) 
-console.log (XX)
+app.get('/estudiantes/:id_estudiantes', (req, res) => {
+    console.log("El parámetro id_estudiantes es: ", req.params.id_estudiantes)
+    res.json({ id_estudiantes: req.params.id_estudiantes })
+})
 
-/*
-console.log("****Numeros Impares****")
-NumerosImpares();
+app.get("/fibonacci", (req, res) => {
 
-console.log("****Numeros Pares****")
-NumerosPares();
+    var numero1 = parseInt(prompt("Ingrese el primer número"));
+    var numero2 = parseInt(prompt("Ingrese el segundo número"));
 
-let sumaDenumeros = sumarNumeros(3,100);
-console.log (`La suma de los numeros es ${sumaDenumeros}`) 
-*/
+    var array = [numero1, numero2];
+    
+    function fibonacci(i) {
+
+        for (var i = 0; i <= 100; i++) {
+            var newnumero = numero1 + numero2;
+            array.push(newnumero);
+            numero1 = numero2;
+            numero2 = newnumero;
+
+            for (x of array) {
+                document.write(x + "<br>");
+            }
+        }
+    }
+    res.json(fibonacci(10))
+})
+
+
+app.listen(5057, function () {
+    console.log("El servidor está activo en el puerto 5057 bebé")
+
+});

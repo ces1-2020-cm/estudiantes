@@ -1,17 +1,18 @@
+
 {
-  "name": "om",
+  "name": "jpbm",
   "version": "1.0.0",
-  "description": "Proyecto de estudiantes",
+  "description": "Proyecto de jpbm",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ces1-2020-cm/estudiantes.git"
   },
-  "author": "Juan Pablo Bolivar Marin",
+  "author": "Juan Fernando Castaño",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ces1-2020-cm/estudiantes/issues"
@@ -19,5 +20,9 @@
   "homepage": "https://github.com/ces1-2020-cm/estudiantes#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
+
