@@ -48,5 +48,16 @@ app.get('/estudiantes/:numero_estudiantes', (req,res)=>{
 res.json({numero_estudiantes:10})
 })
 })
+app.get("/fibonacci/:num", (req, res,) => {
+    var limit = 10;
+        var Fibonacci = [0,1];
+    
+        for(i=2; i <= limit; i++){
+            fibo.push(Fibonacci[i-1] + Fibonacci[i-2]);
+            document.write(Fibonacci[i]+"<br/>");	
+        }
+        console.log("La cadena es:" + Fibonacci);
+        res.send({Fibonacci:10});
+    })
 
 
