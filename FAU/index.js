@@ -21,16 +21,23 @@ app.get('/estudiantes/:numero_estudiantes', (req,res)=>{
     console.log("El parametro numero_estudiantes es", req.params.numero_estudiantes )
 res.json({numero_estudiantes:10})
 })
-app.get("/fibonacci/:num", (req, res,) => {
-var limit = 10;
-	var Fib_total = [0,1];
+app.get("/fibonacci/:limite", (req, res,) => {
+    
+    var Fib_total = [0,1];
+    
+    function Fibonacci (limit){
 
-	for(i=2; i <= limit; i++){
-		fibo.push(Fib_total[i-1] + Fib_total[i-2]);
-		document.write(Fib_total[i]+"<br/>");	
+        for(i=2; i <= limit; i++){
+
+            i = Fib_total[i - 2] + Fib_total[i - 1];	
+
+        }
+        
+        return Fib_total;
+
     }
-    console.log(`La fibonacci es: ${fibo}`);
-    res.send({Fib_total:100});
+    res.json(`Fibonacci es: ${Fibonacci(req.params.limit)}`);
+    
 })
 
 /*  Sucesión Fibonacci  */
