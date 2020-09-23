@@ -6,15 +6,15 @@ app.get('/', function(req,res){
 })
 
 app.listen(5057, function(){
-    console.log("El servidor está ocupado.");
+    console.log("El servidor está siendo usado en este momento.");
 })
 
-app.get('/felipe', (req,res) => {
-    res.send(`hola alejandro`);
+app.get('/alejo', (req,res) => {
+    res.send(`hola Alejandro Guerra`);
 })
 
 app.get('/json', (req,res) => {
-    res.send(`<h1>Hola señor alejandro ¿cómo se encuentra?</h1>.json`);
+    res.send(`<h1> Hola Alejandro Guerra </h1>`);
 })
 
 app.get('/estudiantes/:numero_estudiantes', (req,res)=>{
