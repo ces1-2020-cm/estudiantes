@@ -19,7 +19,7 @@ app.get('/json', (req,res) => {
 
 app.get('/estudiantes/:numero_estudiantes', (req,res)=>{
     console.log("El parametro numero_estudiantes es", req.params.numero_estudiantes )
-res.json({numero_estudiantes:10})
+res.json({numero_estudiantes:100})
 })
 
 app.get("/fibonacci/:num", (req, res)=>{
