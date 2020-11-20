@@ -1,0 +1,28 @@
+{
+  "name": "lgv",
+  "version": "1.0.0",
+  "description": "fibo,clase,oscar",
+  "main": "index.js",
+
+  "scripts": {
+    "dev": "nodemon index",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ces1-2020-cm/estudiantes.git"
+  },
+  "author": "Laura Giraldo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ces1-2020-cm/estudiantes/issues"
+  },
+  "homepage": "https://github.com/ces1-2020-cm/estudiantes#readme",
+  "keywords": [
+    "https://github.com/ces1-2020-cm/estudiantes"
+  ],
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
+
